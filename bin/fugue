@@ -38,7 +38,7 @@
 #   --env-pass <names>         pass comma-separated host env vars into the agent
 #   --print-native-profile     native: print the generated Seatbelt profile and exit
 #   --keep-on-error            do not auto-teardown if the agent exits non-zero (debug)
-#   --image <ref>              docker: override the image (default: ghcr.io/dotbrains/fugue)
+#   --image <ref>              docker: override the image (default: ghcr.io/smeltery/fugue)
 #   -h, --help                 this help
 #
 # Subcommands:
@@ -49,7 +49,7 @@
 set -euo pipefail
 
 FUGUE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-IMAGE="${FUGUE_IMAGE:-ghcr.io/dotbrains/fugue:latest}"
+IMAGE="${FUGUE_IMAGE:-ghcr.io/smeltery/fugue:latest}"
 BACKEND="${FUGUE_BACKEND:-docker}"
 STRICT=1
 EPHEMERAL_WS=0

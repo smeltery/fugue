@@ -14,9 +14,9 @@ updates.
 **Do not open a public issue for security vulnerabilities.**
 
 Please report vulnerabilities privately through
-[GitHub Security Advisories](https://github.com/dotbrains/fugue/security/advisories).
+[GitHub Security Advisories](https://github.com/smeltery/fugue/security/advisories).
 
-1. Go to the [Security Advisories page](https://github.com/dotbrains/fugue/security/advisories).
+1. Go to the [Security Advisories page](https://github.com/smeltery/fugue/security/advisories).
 2. Click **"New draft security advisory"**.
 3. Describe the vulnerability, including steps to reproduce if possible.
 

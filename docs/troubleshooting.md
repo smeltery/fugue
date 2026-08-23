@@ -39,13 +39,13 @@ the allowlist is pinned at start.
 
 ## The image is stale or wrong
 
-The launcher defaults to `ghcr.io/dotbrains/fugue:latest`. To use a local
+The launcher defaults to `ghcr.io/smeltery/fugue:latest`. To use a local
 build or a specific tag:
 
 ```sh
 make check:build                          # build :latest locally
-fugue --image ghcr.io/dotbrains/fugue:<tag> claude "..."
-export FUGUE_IMAGE=ghcr.io/dotbrains/fugue:<tag>   # or set it globally
+fugue --image ghcr.io/smeltery/fugue:<tag> claude "..."
+export FUGUE_IMAGE=ghcr.io/smeltery/fugue:<tag>   # or set it globally
 ```
 
 ## CI or the quality gate fails

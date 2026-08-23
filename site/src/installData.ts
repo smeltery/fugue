@@ -4,19 +4,19 @@ export const INSTALL: Install[] = [
   {
     id: 'brew',
     label: 'Homebrew',
-    code: 'brew install dotbrains/tap/fugue',
+    code: 'brew install smeltery/tap/fugue',
     note: 'macOS / Linuxbrew.',
   },
   {
     id: 'curl',
     label: 'Install script',
-    code: 'curl -fsSL https://raw.githubusercontent.com/dotbrains/fugue/main/install.sh | bash',
+    code: 'curl -fsSL https://raw.githubusercontent.com/smeltery/fugue/main/install.sh | bash',
     note: 'Zero dependencies beyond bash + git/curl.',
   },
   {
     id: 'git',
     label: 'From source',
-    code: 'git clone https://github.com/dotbrains/fugue.git\nexport PATH="$PWD/fugue/bin:$PATH"',
+    code: 'git clone https://github.com/smeltery/fugue.git\nexport PATH="$PWD/fugue/bin:$PATH"',
     note: 'Run the launcher straight from a clone.',
   },
 ]

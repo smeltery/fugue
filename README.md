@@ -2,9 +2,9 @@
 
 # fugue
 
-[![CI](https://github.com/dotbrains/fugue/actions/workflows/ci.yml/badge.svg)](https://github.com/dotbrains/fugue/actions/workflows/ci.yml)
-[![security](https://github.com/dotbrains/fugue/actions/workflows/security.yml/badge.svg)](https://github.com/dotbrains/fugue/actions/workflows/security.yml)
-[![Release](https://img.shields.io/github/v/release/dotbrains/fugue?logo=github&color=blue)](https://github.com/dotbrains/fugue/releases)
+[![CI](https://github.com/smeltery/fugue/actions/workflows/ci.yml/badge.svg)](https://github.com/smeltery/fugue/actions/workflows/ci.yml)
+[![security](https://github.com/smeltery/fugue/actions/workflows/security.yml/badge.svg)](https://github.com/smeltery/fugue/actions/workflows/security.yml)
+[![Release](https://img.shields.io/github/v/release/smeltery/fugue?logo=github&color=blue)](https://github.com/smeltery/fugue/releases)
 [![License](https://img.shields.io/badge/License-PolyForm_Shield_1.0-blue)](LICENSE)
 
 > Incognito mode for AI coding agents — Claude, Codex, Gemini, and a dozen more.
@@ -32,9 +32,9 @@ evaporates.
 ## Install
 
 ```sh
-brew install dotbrains/tap/fugue
+brew install smeltery/tap/fugue
 # or, zero-dependency:
-curl -fsSL https://raw.githubusercontent.com/dotbrains/fugue/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/smeltery/fugue/main/install.sh | bash
 ```
 
 ## Usage
@@ -137,4 +137,4 @@ invariants that must not be weakened).
 
 ## License
 
-[PolyForm Shield 1.0.0](LICENSE). Published at `ghcr.io/dotbrains/fugue`.
+[PolyForm Shield 1.0.0](LICENSE). Published at `ghcr.io/smeltery/fugue`.

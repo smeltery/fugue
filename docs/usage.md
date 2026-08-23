@@ -66,7 +66,7 @@ flip its profile's `BACKENDS` — see [configuration.md](configuration.md).
 | `--env-pass <names>`      | —        | Pass comma-separated host environment variable names into the agent.               |
 | `--print-native-profile`  | off      | native: print the generated Seatbelt profile and exit without starting the agent. |
 | `--keep-on-error`         | off      | If the agent exits non-zero, skip the scrub (debugging aid).                         |
-| `--image <ref>`           | `ghcr.io/dotbrains/fugue:latest` | docker: use a specific image.                                  |
+| `--image <ref>`           | `ghcr.io/smeltery/fugue:latest` | docker: use a specific image.                                  |
 | `-h`, `--help`            | —        | Print usage and exit.                                                                |
 
 ## Examples

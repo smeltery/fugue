@@ -11,20 +11,20 @@ to produce a setup that fits my machine, modeled on how fugue actually works.
 Read these before proposing anything. Mirror their structure and least-privilege
 patterns; do not invent a different model.
 
-- https://github.com/dotbrains/fugue/blob/main/bin/fugue
+- https://github.com/smeltery/fugue/blob/main/bin/fugue
       the launcher: flag parsing, backend dispatch, the docker run assembly, and
       native_profile() which emits the macOS sandbox-exec (SBPL) policy
-- https://github.com/dotbrains/fugue/blob/main/src/fugue-entry
+- https://github.com/smeltery/fugue/blob/main/src/fugue-entry
       the docker entrypoint: the nftables egress allowlist and the scrub trap
-- https://github.com/dotbrains/fugue/tree/main/profiles
+- https://github.com/smeltery/fugue/tree/main/profiles
       one <agent>.env per agent — the contract you must match
-- https://github.com/dotbrains/fugue/blob/main/docs/configuration.md
+- https://github.com/smeltery/fugue/blob/main/docs/configuration.md
       the profile fields and the environment surface
-- https://github.com/dotbrains/fugue/blob/main/docs/architecture.md
+- https://github.com/smeltery/fugue/blob/main/docs/architecture.md
       how each backend sandboxes, end to end
-- https://github.com/dotbrains/fugue/blob/main/docs/threat-model.md
+- https://github.com/smeltery/fugue/blob/main/docs/threat-model.md
       what each backend does and does NOT defend against
-- https://github.com/dotbrains/fugue/blob/main/prompts/new-agent-profile.md
+- https://github.com/smeltery/fugue/blob/main/prompts/new-agent-profile.md
       the template for writing a new agent profile
 
 ## Step 2: Auto-detect as much as you can

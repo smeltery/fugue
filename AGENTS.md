@@ -1,6 +1,6 @@
 # Agent Instructions for fugue
 
-fugue is a dotbrains project. This file is the canonical guide for any AI coding
+fugue is a smeltery project. This file is the canonical guide for any AI coding
 agent (Claude, Codex, Gemini, Cursor, Copilot, …) working in this repository. If
 you read nothing else, read this and run `make check` before you finish.
 

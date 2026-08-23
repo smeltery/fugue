@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  IMAGE: ghcr.io/dotbrains/fugue
+  IMAGE: ghcr.io/smeltery/fugue
 
 jobs:
   publish:
@@ -93,17 +93,17 @@ jobs:
           echo "version=${version}" >>"$GITHUB_OUTPUT"
           echo "fugue ${version} → sha256 ${sha}"
 
-      - name: Push to dotbrains/homebrew-tap
+      - name: Push to smeltery/homebrew-tap
         env:
           TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
         run: |
           if [ -z "${TOKEN}" ]; then
             echo "HOMEBREW_TAP_TOKEN is not set; skipping the tap publish." >&2
-            echo "Add a repo secret with push access to dotbrains/homebrew-tap." >&2
+            echo "Add a repo secret with push access to smeltery/homebrew-tap." >&2
             exit 0
           fi
           git clone --depth 1 \
-            "https://x-access-token:${TOKEN}@github.com/dotbrains/homebrew-tap.git" tap
+            "https://x-access-token:${TOKEN}@github.com/smeltery/homebrew-tap.git" tap
           mkdir -p tap/Formula
           cp rendered.rb tap/Formula/fugue.rb
           cd tap

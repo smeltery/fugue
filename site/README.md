@@ -2,7 +2,7 @@
 
 # fugue site
 
-The marketing site for [fugue](https://github.com/dotbrains/fugue) — a single-page
+The marketing site for [fugue](https://github.com/smeltery/fugue) — a single-page
 Vite + React + TypeScript app, terminal/dark theme, no runtime dependencies
 beyond React.
 
@@ -26,7 +26,7 @@ npm run preview    # serve the production build locally
 This app lives in the `site/` subdirectory of the fugue repo, so point Vercel at
 that directory:
 
-1. In Vercel, **New Project** → import `dotbrains/fugue`.
+1. In Vercel, **New Project** → import `smeltery/fugue`.
 2. Set **Root Directory** to `site`.
 3. Framework preset auto-detects **Vite** (build `npm run build`, output `dist`).
 4. Deploy.

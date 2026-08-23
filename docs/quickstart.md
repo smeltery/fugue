@@ -16,7 +16,7 @@ Get from a clean checkout to a no-trace agent session in a few minutes.
 ## 2. Get fugue
 
 ```sh
-git clone https://github.com/dotbrains/fugue.git
+git clone https://github.com/smeltery/fugue.git
 cd fugue
 ```
 
@@ -31,13 +31,13 @@ export PATH="$PWD/bin:$PATH"
 Build the image locally:
 
 ```sh
-make check:build          # builds ghcr.io/dotbrains/fugue:latest
+make check:build          # builds ghcr.io/smeltery/fugue:latest
 ```
 
 Or pull the published image (the launcher uses it by default):
 
 ```sh
-docker pull ghcr.io/dotbrains/fugue:latest
+docker pull ghcr.io/smeltery/fugue:latest
 ```
 
 ## 4. Run a session

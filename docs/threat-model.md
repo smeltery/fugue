@@ -28,7 +28,7 @@ backend does and does not carry over.
   the requests you make with your own API key. fugue removes *local* trace and
   *lateral* egress, not the authenticated API call itself.
 - **A malicious base image.** Trust comes from the published, reproducible
-  `ghcr.io/dotbrains/fugue` build. Run your own build if you don't trust ours.
+  `ghcr.io/smeltery/fugue` build. Run your own build if you don't trust ours.
 - **Host-level observation.** If something on the host is watching docker events
   or the model API socket, fugue doesn't hide the container's existence.
 - **DNS-based correlation.** The startup resolution of `API_HOSTS` is a visible

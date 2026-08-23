@@ -25,7 +25,7 @@ SHELL_SRC := $(SCRIPTS) $(PROFILES)
 # Match the project's hand-tuned style: two-space indent, switch-case indented.
 SHFMT_FLAGS := -i 2 -ci
 
-IMAGE ?= ghcr.io/dotbrains/fugue:latest
+IMAGE ?= ghcr.io/smeltery/fugue:latest
 
 .PHONY: help check fmt \
         check\:format check\:lint check\:dockerfile check\:tests check\:build \

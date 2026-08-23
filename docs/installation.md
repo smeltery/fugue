@@ -25,13 +25,13 @@ hard network leash), or use the native backend. See [security.md](security.md).
 ### Homebrew
 
 ```sh
-brew install dotbrains/tap/fugue
+brew install smeltery/tap/fugue
 ```
 
 ### Install script (zero-dependency)
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/dotbrains/fugue/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/smeltery/fugue/main/install.sh | bash
 ```
 
 It installs the tree under `~/.local/share/fugue` and links `fugue` into
@@ -41,7 +41,7 @@ It installs the tree under `~/.local/share/fugue` and links `fugue` into
 ### From a clone
 
 ```sh
-git clone https://github.com/dotbrains/fugue.git
+git clone https://github.com/smeltery/fugue.git
 cd fugue
 export PATH="$PWD/bin:$PATH"   # add to your shell profile to persist
 ```
@@ -54,10 +54,10 @@ eval "$(fugue shellenv)"        # bash/zsh; fish: fugue shellenv fish | source
 
 ## Get the image
 
-The launcher defaults to `ghcr.io/dotbrains/fugue:latest`. Either pull it:
+The launcher defaults to `ghcr.io/smeltery/fugue:latest`. Either pull it:
 
 ```sh
-docker pull ghcr.io/dotbrains/fugue:latest
+docker pull ghcr.io/smeltery/fugue:latest
 ```
 
 …or build it from source:

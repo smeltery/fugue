@@ -38,7 +38,7 @@ export function Footer() {
             fugue
           </a>
           <p className="muted">
-            Published at <code>ghcr.io/dotbrains/fugue</code> ·{' '}
+            Published at <code>ghcr.io/smeltery/fugue</code> ·{' '}
             <a href={`${REPO}/blob/main/LICENSE`} target="_blank" rel="noreferrer">
               PolyForm Shield 1.0.0
             </a>
@@ -52,8 +52,8 @@ export function Footer() {
           <a href={`${REPO}/blob/main/docs/threat-model.md`} target="_blank" rel="noreferrer">
             Threat model
           </a>
-          <a href="https://dotbrains.dev" target="_blank" rel="noreferrer">
-            dotbrains
+          <a href="https://smeltery.dev" target="_blank" rel="noreferrer">
+            smeltery
           </a>
         </div>
       </div>

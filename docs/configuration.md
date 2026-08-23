@@ -72,7 +72,7 @@ that's required; do 3–4 only to also bake the agent into the docker image.
 | Variable                                                  | Effect                                                              |
 | -------------------------------------------------------- | ------------------------------------------------------------------ |
 | `FUGUE_BACKEND`                                          | Default backend (`docker` or `native`). `--backend` takes precedence. |
-| `FUGUE_IMAGE`                                            | docker: override the default image (`ghcr.io/dotbrains/fugue:latest`). `--image` takes precedence. |
+| `FUGUE_IMAGE`                                            | docker: override the default image (`ghcr.io/smeltery/fugue:latest`). `--image` takes precedence. |
 | `FUGUE_WORKDIR`                                          | Default sandbox workspace. `--workdir` takes precedence. |
 | `FUGUE_DENY_READ`                                        | native: space-separated absolute subpaths to additionally deny reads of, on top of the built-in secret denylist. |
 | `FUGUE_RO_DIRS`                                          | Colon-separated extra read-only directories, equivalent to repeated `--ro-dir`. |

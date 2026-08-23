@@ -2,7 +2,7 @@
 #
 # fugue installer — zero-dependency beyond bash + (git or curl/tar).
 #
-#   curl -fsSL https://raw.githubusercontent.com/dotbrains/fugue/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/smeltery/fugue/main/install.sh | bash
 #
 # Installs the fugue tree (launcher + profiles + entrypoint) under a share dir
 # and symlinks the `fugue` launcher onto your PATH. Override locations with:
@@ -11,7 +11,7 @@
 #   FUGUE_REF     (default: main)          -> branch/tag to install
 set -euo pipefail
 
-REPO="https://github.com/dotbrains/fugue"
+REPO="https://github.com/smeltery/fugue"
 PREFIX="${FUGUE_PREFIX:-$HOME/.local}"
 REF="${FUGUE_REF:-main}"
 SHARE="$PREFIX/share/fugue"

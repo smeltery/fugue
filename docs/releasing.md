@@ -1,6 +1,6 @@
 # Releasing
 
-fugue's distributable artifact is the container image `ghcr.io/dotbrains/fugue`.
+fugue's distributable artifact is the container image `ghcr.io/smeltery/fugue`.
 The `bin/fugue` launcher is run from a clone and pulls that image, so a release
 means **publishing a versioned, multi-arch image to GHCR** (and a GitHub Release
 for the notes). There is no separate binary or package to ship.
@@ -20,7 +20,7 @@ Releases are tag-driven. Pushing a `v*` tag triggers
 flowchart LR
     tag["git push origin vX.Y.Z"] --> wf[release.yml]
     wf --> build[buildx: amd64 + arm64]
-    build --> push[push to ghcr.io/dotbrains/fugue]
+    build --> push[push to ghcr.io/smeltery/fugue]
     wf --> rel[GitHub Release + notes]
 ```
 
@@ -30,9 +30,9 @@ For a tag `vX.Y.Z` the workflow publishes:
 
 | Tag                                  | When                                  |
 | ------------------------------------ | ------------------------------------- |
-| `ghcr.io/dotbrains/fugue:X.Y.Z`      | always                                |
-| `ghcr.io/dotbrains/fugue:X.Y`        | always                                |
-| `ghcr.io/dotbrains/fugue:latest`     | only for non-prerelease tags          |
+| `ghcr.io/smeltery/fugue:X.Y.Z`      | always                                |
+| `ghcr.io/smeltery/fugue:X.Y`        | always                                |
+| `ghcr.io/smeltery/fugue:latest`     | only for non-prerelease tags          |
 
 A prerelease tag (e.g. `v0.2.0-rc.1`) publishes the version tags and is marked
 as a prerelease, but does **not** move `latest`.
@@ -53,8 +53,8 @@ as a prerelease, but does **not** move `latest`.
    is live and the Homebrew formula is published:
 
    ```sh
-   docker pull ghcr.io/dotbrains/fugue:0.1.0
-   brew install dotbrains/tap/fugue
+   docker pull ghcr.io/smeltery/fugue:0.1.0
+   brew install smeltery/tap/fugue
    ```
 
 ### Homebrew formula
@@ -62,11 +62,11 @@ as a prerelease, but does **not** move `latest`.
 The `homebrew` job in the release workflow publishes the formula automatically
 on each **stable** tag (not `-rc`): it downloads the tag's source tarball,
 computes its `sha256`, renders [`Formula/fugue.rb`](../Formula/fugue.rb) with the
-real `url`/`sha256`, and commits it to `dotbrains/homebrew-tap` as
+real `url`/`sha256`, and commits it to `smeltery/homebrew-tap` as
 `Formula/fugue.rb`.
 
 This needs a one-time secret: a fine-grained or classic **personal access token
-with `contents: write` (push) access to `dotbrains/homebrew-tap`**, stored on the
+with `contents: write` (push) access to `smeltery/homebrew-tap`**, stored on the
 fugue repo as the `HOMEBREW_TAP_TOKEN` secret (the default `GITHUB_TOKEN` can't
 push to another repo). Without it, the release still succeeds and the job logs a
 skip — only the tap update is missed.
@@ -108,6 +108,6 @@ make check:build
 ## Rollback
 
 Images are immutable per tag. To roll `latest` back, re-point consumers at a
-known-good version tag (`ghcr.io/dotbrains/fugue:0.1.0`), or cut a new patch
+known-good version tag (`ghcr.io/smeltery/fugue:0.1.0`), or cut a new patch
 release from a fixed commit. Don't delete published version tags — pin away from
 them instead.
