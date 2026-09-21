@@ -5,8 +5,8 @@
   "description": "Pinned AI agent CLIs baked into the fugue image. Managed by Dependabot; installed by the Dockerfile.",
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
-    "@anthropic-ai/claude-code": "2.1.211",
-    "@google/gemini-cli": "0.50.0",
-    "@openai/codex": "0.144.4"
+    "@anthropic-ai/claude-code": "2.1.241",
+    "@google/gemini-cli": "0.56.0",
+    "@openai/codex": "0.149.1"
   }
 }
