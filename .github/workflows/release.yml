@@ -25,7 +25,7 @@ env:
 jobs:
   publish:
     name: build and publish to GHCR
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7
@@ -74,7 +74,7 @@ jobs:
     needs: publish
     # Only stable tags update the tap; -rc prereleases don't.
     if: ${{ !contains(github.ref, '-rc') }}
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7

@@ -21,9 +21,7 @@ env:
 jobs:
   quality:
     name: quality gate
-    # Runs on a self-hosted Blacksmith runner; GitHub-hosted runners
-    # (ubuntu-latest) are unavailable on this org's billing plan.
-    runs-on: blacksmith-4vcpu-ubuntu-2404
+    runs-on: ubuntu-24.04
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v7
